@@ -1,0 +1,139 @@
+﻿@*@{
+    Layout = "_Layout";
+    var culture = _SiteService.GetCurrentCulture();
+}
+
+@section Styles{
+    <style>
+    </style>
+}
+
+    <div class="py-6">
+        <div class="row clearfix">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+
+@section Scripts{
+    <script>
+        $(async () => {
+            toastr.options = {
+                "closeButton": true,
+                "debug": true,
+                "newestOnTop": true,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": 0,
+                "extendedTimeOut": 0,
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut",
+                "tapToDismiss": false
+            }
+            toastr["success"](`你好!<br /><br /><button type="button" class="btn clear">Yes</button>`, `測試`);
+        });
+    </script>
+}*@
+
+@*@{
+    Layout = "_Layout";
+}
+
+@section Styles{
+    <style>
+    </style>
+}
+
+    <div class="py-6">
+        <div class="row clearfix">
+            <div class="col-12">
+                <select class="example01 form-control">
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                    <option value="5">E</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+@section Scripts{
+    <script>
+        $(async () => {
+            $('.example01').select2();
+        });
+    </script>
+}*@
+
+
+@*@{
+    Layout = "_Layout";
+}
+
+@section Styles{
+    <style>
+    </style>
+}
+
+    <div class="py-6">
+        <div class="row clearfix">
+            <div class="col-12">
+                <select class="example02 form-control" multiple="multiple">
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                    <option value="5">E</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+@section Scripts{
+    <script>
+        $(async () => {
+            $('.example02').select2();
+        });
+    </script>
+}*@
+
+                @{
+    Layout = "_Layout";
+    var culture = _SiteService.GetCurrentCulture();
+}
+
+@section Styles{
+    <style>
+    </style>
+}
+
+    <div class="py-6">
+        <div class="row clearfix">
+            <div class="col-12">
+                <select class="example03 form-control">
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                    <option value="5">E</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+@section Scripts{
+    <script>
+        $(async () => {
+            $('.example03').select2({
+                language: '@culture',
+            });
+        });
+    </script>
+}
